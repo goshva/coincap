@@ -6,10 +6,10 @@
         <th :class="{ up: this.sortOrder === 1, down: this.sortOrder === -1 }">
           <span class="underline cursor-pointer" @click="changeSortOrder">Ranking</span>
         </th>
-        <th>Nombre</th>
-        <th>Precio</th>
-        <th>Cap. de Mercado</th>
-        <th>Variación 24hs</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Cap. of Market</th>
+        <th>24h Variation</th>
         <td class="hidden sm:block">
           <input
             class="bg-gray-100 focus:outline-none border-b border-gray-400 py-2 px-4 block w-full appearance-none leading-normal"

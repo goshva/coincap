@@ -1,4 +1,4 @@
-# platzi-exchange
+#use  http://localhost:8080/coin/bitcoin
 
 ## Project setup
 ```

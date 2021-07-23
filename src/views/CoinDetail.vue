@@ -26,23 +26,23 @@
               <span>#{{ asset.rank }}</span>
             </li>
             <li class="flex justify-between">
-              <b class="text-gray-600 mr-10 uppercase">Precio actual</b>
+              <b class="text-gray-600 mr-10 uppercase">ACTUAL PRICE</b>
               <span>{{ asset.priceUsd | dollar }}</span>
             </li>
             <li class="flex justify-between">
-              <b class="text-gray-600 mr-10 uppercase">Precio más bajo</b>
+              <b class="text-gray-600 mr-10 uppercase">LOWEST PRICE</b>
               <span>{{ min | dollar }}</span>
             </li>
             <li class="flex justify-between">
-              <b class="text-gray-600 mr-10 uppercase">Precio más alto</b>
+              <b class="text-gray-600 mr-10 uppercase">HIGHEST PRICE</b>
               <span>{{ max | dollar }}</span>
             </li>
             <li class="flex justify-between">
-              <b class="text-gray-600 mr-10 uppercase">Precio Promedio</b>
+              <b class="text-gray-600 mr-10 uppercase">AVERAGE PRICE</b>
               <span>{{ avg | dollar }}</span>
             </li>
             <li class="flex justify-between">
-              <b class="text-gray-600 mr-10 uppercase">Variación 24hs</b>
+              <b class="text-gray-600 mr-10 uppercase">24H VARIATION</b>
               <span>{{ asset.changePercent24Hr | percent }}</span>
             </li>
           </ul>
@@ -81,7 +81,7 @@
 
 
 
-      <h3 class="text-xl my-10">Mejores Ofertas de Cambio</h3>
+      <h3 class="text-xl my-10">Best Exchange Offers</h3>
       <table>
         <tr v-for="m in markets" :key="`${m.exchangeId}-${m.priceUsd}`" class="border-b">
           <td>
@@ -124,10 +124,7 @@ export default {
       markets: [],
       fromUsd: true,
       convertValue: null,
-      ohlcv: [
-          [1626969600000 , 0.06256193,  0.06267275, 0.06215000,  0.06267275,  128.15186030 ],
-          [1626998400000, 0.06268860, 0.06378971, 0.06253641,  0.06350956,  353.65345209 ]
-      ]
+      ohlcv: []
     }
   },
 
